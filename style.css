@@ -1,0 +1,407 @@
+
+body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select  {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  header {
+   background-color: #fff
+  }
+}
+
+.header_container {
+  padding: 10px 20px;
+  margin: 0 36px 0 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+ .header_container {
+      max-width: 100%;
+      margin: 0 20px;
+  }
+}
+
+.header_logo {
+  height: 20px;
+}
+
+#gloval_nav {
+  list-style: none;
+  width: 30px;
+  height: 21px;
+}
+
+@media screen and (max-width: 1080px) {
+  .HeaderNavHamburger {
+      cursor: pointer;
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 21px;
+      z-index: 100;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .HeaderNavHamburger__line {
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #333333;
+      transform: translate(0, -50%);
+      border-radius: 10px;
+      transition: top 0.2s, transform 0.2s, opacity 0.3s;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .HeaderNavHamburger__line:first-child {
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .HeaderNavHamburger__line:last-child {
+      top: 100%;
+  }
+}
+
+#gloval_nav_button {
+  transition: opacity 0.2s;
+}
+
+#gloval_nav_button:hover {
+  opacity: 0.7;
+}
+
+.gloval_nav_link span {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+}
+
+.gloval_nav_link span:first-child {
+  font-family: 'Lato', sans-serif;
+}
+
+.gloval_nav_link span:last-child {
+  font-size: 10px;
+}
+
+#gloval_nav_button {
+  border-radius: 38px;
+  background-color: #F79214;
+  padding: 0 20px;
+  height: 40px;
+  align-items: center;
+  color: #fff;
+  display: flex;  　　　　　/*親要素じゃなくても使えるのか？*/
+}
+
+@media screen and (max-width: 1080px) {
+  nav ul {
+    display: none;
+  }
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.main-image {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .main-image {
+  display: block;
+  padding:0 0;
+  }
+}
+
+.main_wrapper {
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  background-position: center; 
+  padding-top: 100px;
+  padding-bottom: 28px;
+}
+
+@media screen and (max-width: 767px) {
+  .main_wrapper {
+    background-image: none;
+    padding-top: 0;
+    padding-bottom: 35px;
+  }
+}
+
+.main_container {
+  padding-left: 50px;
+  padding-right: 50px; 
+  max-width: 1140px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  .main_container {
+    margin-top: -45vw;
+    padding: 0 20px;
+    max-width: none;
+  }
+}
+
+
+.main_content {
+  margin-bottom: 70px;
+  width: fit-content;
+}
+
+@media screen and (max-width: 767px) {
+  .main_content {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.potepan_images {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .potepan_images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.img1 {
+  padding-right: 10px;
+}
+
+.img2 {
+  padding-right: 10px;
+}
+
+.img3 {
+  padding-right: 10px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.main_wrapper h1 {
+  text-align: center;
+  font-size: 38px;
+  font-family: "Lato", sans-serif;
+}
+
+.img_notes {
+  color: #A2A2A4;
+  font-size: 12px;
+}
+
+.application_links {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .application_links {
+    flex-direction: column;
+  }
+}
+
+.application_links a:hover {
+  opacity: 0.7;
+}
+
+.counseling {
+  box-sizing: border-box;
+  background-color: #f79314;
+  height: 64px;
+  border-radius: 100px;
+  padding: 15px 45px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+  display: flex;             /*子要素にも使えるのか？*/
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 700;
+  transition: opacity 0.2s;
+}
+
+@media screen and (max-width: 767px) {
+  .application_links a {
+    font-size: 14px;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .counseling {
+    margin-right: 0;
+    margin-bottom: 10px
+  }
+}
+
+.document_request {
+  box-sizing: border-box;
+  height: 64px;
+  border-radius: 100px;
+  border: 1px solid #A2A2A4;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 700;
+  transition: opacity 0.2s;
+}
+
+@media screen and (max-width: 767px) {
+  .document_request {
+    height: 45px;
+  }
+}
+
+.about_potepan {
+  background-color: #f79314;
+  color: white;
+  align-items: center;
+  padding:45px 50px 45px 50px;
+}
+
+.about_potepan_content {
+  width: 53%;
+}
+
+@media screen and (max-width: 767px) {
+  .about_potepan_content {
+    width: 100%;
+  }
+}
+
+.about_potepan h2 {
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 767px) {
+  .about_potepan h2 {
+    text-align: center;
+  }
+}
+
+.about_potepan h2 span {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+}
+
+.about_potepan p {
+  margin-top: 15px;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.about_potepan h2 br {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .about_potepan h2 br {
+    display: block;
+  }
+}
+
+.about_potepan_container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+@media screen and (max-width: 767px) {
+  .about_potepan_container {
+    flex-direction: column;
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.about_potepan_link {
+  width: 250px;
+}
+
+
+.about_potepan_link a {
+  height: 64px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 38px;
+  color: #f79314;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition: opacity 0.2s;
+}
+
+@media screen and (max-width: 767px) {
+  .about_potepan_link a {
+    margin-top: 40px;
+  }
+}
+
+.about_potepan_link a:hover {
+  opacity: 0.7;
+}
+
+.about_potepan_link a span:first-child {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
